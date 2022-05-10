@@ -1,0 +1,50 @@
+
+[*]
+
+# ReSharper properties
+resharper_align_first_arg_by_paren = true
+resharper_align_multiline_binary_expressions_chain = true
+resharper_align_multiline_expression_braces = true
+resharper_blank_lines_around_function_declaration = 1
+resharper_blank_lines_around_other_declaration = 1
+resharper_blank_lines_around_single_line_function_definition = 1
+resharper_brace_style = next_line
+resharper_empty_block_style = together_same_line
+resharper_function_declaration_return_type_style = on_single_line
+resharper_function_definition_return_type_style = on_single_line
+resharper_int_align_comments = true
+resharper_int_align_declaration_names = true
+resharper_int_align_eq = true
+resharper_keep_blank_lines_in_code = 1
+resharper_keep_blank_lines_in_declarations = 1
+resharper_line_break_before_requires_clause = on_single_line
+resharper_namespace_indentation = none
+resharper_outdent_commas = true
+resharper_outdent_dots = true
+resharper_place_namespace_definitions_on_same_line = true
+resharper_place_type_constraints_on_same_line = false
+resharper_simple_block_style = line_break
+resharper_simple_case_statement_style = line_break
+resharper_simple_embedded_statement_style = line_break
+resharper_space_after_ptr_in_data_member = false
+resharper_space_after_ptr_in_method = false
+resharper_space_after_ref_in_data_member = false
+resharper_space_after_ref_in_method = false
+resharper_space_before_ptr_in_abstract_decl = true
+resharper_space_before_ptr_in_method = true
+resharper_space_before_ref_in_abstract_decl = true
+resharper_space_before_ref_in_data_member = true
+resharper_space_before_ref_in_method = true
+resharper_toplevel_function_declaration_return_type_style = on_single_line
+resharper_toplevel_function_definition_return_type_style = on_single_line
+
+# ReSharper inspection severities
+resharper_cpp_enforce_cv_qualifiers_order_highlighting = hint
+resharper_cpp_enforce_cv_qualifiers_placement_highlighting = hint
+resharper_cpp_enforce_do_statement_braces_highlighting = hint
+resharper_cpp_enforce_for_statement_braces_highlighting = hint
+resharper_cpp_enforce_function_declaration_style_highlighting = hint
+resharper_cpp_enforce_if_statement_braces_highlighting = hint
+resharper_cpp_enforce_type_alias_code_style_highlighting = hint
+resharper_cpp_enforce_while_statement_braces_highlighting = hint
+resharper_cpp_remove_redundant_braces_highlighting = hint
