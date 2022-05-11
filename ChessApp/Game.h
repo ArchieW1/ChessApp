@@ -2,26 +2,32 @@
 
 #include "SDL.h"
 
+#include "Components.h"
+
 class Game
 {
 public:
-  Game(const char* title, int xPosition, int yPosition, int width, int height);
+  Game(const char* title, int width, int height, int xPosition = SDL_WINDOWPOS_CENTERED,
+                                                 int yPosition = SDL_WINDOWPOS_CENTERED);
 
   ~Game();
 
-  inline bool GetIsRunning() const
+  bool GetIsRunning() const
   {
     return _isRunning;
   }
 
+  static SDL_Renderer* Renderer;
+  static SDL_Event Event;
+  static Manager Manager;
+
   void HandleEvents();
   void Update();
   void Render();
-  void Clean();
 
 private:
   bool _isRunning = true;
   SDL_Window* _window;
-  SDL_Renderer* _renderer;
+  
 };
 
