@@ -18,44 +18,45 @@
     <ClCompile Include="ChessApp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Game.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="TextureManager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Game.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="TextureManager.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ECS.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Components.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="PositionComponent.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="TextureComponent.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="MouseController.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="white-pieces.png">
+    <Image Include="white_rook.png">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="board1.png">
+    <Image Include="white_queen.png">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="black-pieces.png">
+    <Image Include="white_pawn.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="white_knight.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="white_king.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="white_bishop.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="board.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="black_rook.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="black_queen.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="black_pawn.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="black_knight.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="black_king.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="black_bishop.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>

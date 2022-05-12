@@ -152,22 +152,21 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ChessApp.cpp" />
-    <ClCompile Include="Game.cpp" />
-    <ClCompile Include="TextureManager.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Components.h" />
-    <ClInclude Include="ECS.h" />
-    <ClInclude Include="Game.h" />
-    <ClInclude Include="MouseController.h" />
-    <ClInclude Include="PositionComponent.h" />
-    <ClInclude Include="TextureComponent.h" />
-    <ClInclude Include="TextureManager.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="black-pieces.png" />
-    <Image Include="board1.png" />
-    <Image Include="white-pieces.png" />
+    <Image Include="black_bishop.png" />
+    <Image Include="black_king.png" />
+    <Image Include="black_knight.png" />
+    <Image Include="black_pawn.png" />
+    <Image Include="black_queen.png" />
+    <Image Include="black_rook.png" />
+    <Image Include="board.png" />
+    <Image Include="white_bishop.png" />
+    <Image Include="white_king.png" />
+    <Image Include="white_knight.png" />
+    <Image Include="white_pawn.png" />
+    <Image Include="white_queen.png" />
+    <Image Include="white_rook.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
