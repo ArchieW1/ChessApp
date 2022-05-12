@@ -1,7 +1,9 @@
 # Chess Application
 A chess app thing
 
-#TODO:
+***
+
+# TODO:
 - [ ] Prototype
 	- [x] Create 1 file chess app with basic rendering and taking
 	- [ ] Abstract into OOP
