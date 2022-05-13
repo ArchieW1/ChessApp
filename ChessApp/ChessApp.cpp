@@ -104,7 +104,7 @@ struct Board
     pieces.emplace_back("black_rook.png", 80 * 7, 80 * 7, false);
 
     srcRect.x = srcRect.y = 0;
-    srcRect.w = srcRect.h = 180;
+    srcRect.w = srcRect.h = 178;
     dstRect.x = dstRect.y = 0;
     dstRect.w = dstRect.h = 640;
   }
@@ -124,25 +124,40 @@ void Clean()
 
 void Render()
 {
+  SDL_Rect dstRect;
   SDL_RenderClear(Renderer);
   SDL_RenderCopy(Renderer, TheBoard.texture, &TheBoard.srcRect, &TheBoard.dstRect);
+
   for (auto piece : TheBoard.pieces)
   {
     if (piece.isEmpty)
     {
       continue;
     }
-    SDL_Rect dstRect;
     dstRect.x = piece.x;
     dstRect.y = piece.y;
     dstRect.w = dstRect.h = 80;
     SDL_RenderCopy(Renderer, piece.texture, &piece.srcRect, &dstRect);
   }
+
+  if (PieceBeingDragged != nullptr)
+  {
+    dstRect.x = Event.motion.x - 80 / 2;
+    dstRect.y = Event.motion.y - 80 / 2;
+    dstRect.w = dstRect.h = 80;
+    SDL_RenderCopy(Renderer, PieceBeingDragged->texture, &PieceBeingDragged->srcRect, &dstRect);
+  }
+
   SDL_RenderPresent(Renderer);
 }
 
 void OnClick()
 {
+  if (PieceBeingDragged != nullptr)
+  {
+    return;
+  }
+
   int x = Event.motion.x;
   int y = Event.motion.y;
 
@@ -151,7 +166,18 @@ void OnClick()
   if (!TheBoard.pieces[indexClicked].isEmpty)
   {
     PieceBeingDragged = &TheBoard.pieces[indexClicked];
+    PieceBeingDragged->isEmpty = true;
   }
+}
+
+void OnMove()
+{
+  if (PieceBeingDragged == nullptr)
+  {
+    return;
+  }
+
+  Render();
 }
 
 void OnRelease()
@@ -163,19 +189,25 @@ void OnRelease()
 
   int x = Event.motion.x;
   int y = Event.motion.y;
+
+  if (x < 0 || y < 0 || x > 640 || y > 640)
+  {
+    return;
+  }
   
   int indexClicked = (x / 80) + ((y / 80) * 8);
 
   if (PieceBeingDragged == &TheBoard.pieces[indexClicked])
   {
+    PieceBeingDragged->isEmpty = false;
+    PieceBeingDragged = nullptr;
+    Render();
     return;
   }
 
   TheBoard.pieces[indexClicked].texture = PieceBeingDragged->texture;
   TheBoard.pieces[indexClicked].isWhite = PieceBeingDragged->isWhite;
-  TheBoard.pieces[indexClicked].isEmpty = PieceBeingDragged->isEmpty;
-
-  PieceBeingDragged->isEmpty = true;
+  TheBoard.pieces[indexClicked].isEmpty = false;
 
   PieceBeingDragged = nullptr;
 
@@ -194,6 +226,10 @@ void HandleEvents()
 
     case SDL_MOUSEBUTTONDOWN:
       OnClick();
+      break;
+
+    case SDL_MOUSEMOTION:
+      OnMove();
       break;
 
     case SDL_MOUSEBUTTONUP:

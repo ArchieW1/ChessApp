@@ -59,5 +59,14 @@
     <Image Include="black_bishop.png">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="text.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="numbers.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="board_alt.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>
