@@ -153,25 +153,34 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ChessApp.cpp" />
+    <ClCompile Include="Sources/Board.cpp" />
+    <ClCompile Include="Sources/ChessApp.cpp" />
+    <ClCompile Include="Sources/Game.cpp" />
+    <ClCompile Include="Sources/Piece.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="black_bishop.png" />
-    <Image Include="black_king.png" />
-    <Image Include="black_knight.png" />
-    <Image Include="black_pawn.png" />
-    <Image Include="black_queen.png" />
-    <Image Include="black_rook.png" />
-    <Image Include="board.png" />
-    <Image Include="board_alt.png" />
-    <Image Include="numbers.png" />
-    <Image Include="text.png" />
-    <Image Include="white_bishop.png" />
-    <Image Include="white_king.png" />
-    <Image Include="white_knight.png" />
-    <Image Include="white_pawn.png" />
-    <Image Include="white_queen.png" />
-    <Image Include="white_rook.png" />
+    <Image Include="Resources/black_bishop.png" />
+    <Image Include="Resources/black_king.png" />
+    <Image Include="Resources/black_knight.png" />
+    <Image Include="Resources/black_pawn.png" />
+    <Image Include="Resources/black_queen.png" />
+    <Image Include="Resources/black_rook.png" />
+    <Image Include="Resources/board.png" />
+    <Image Include="Resources/white_bishop.png" />
+    <Image Include="Resources/white_king.png" />
+    <Image Include="Resources/white_knight.png" />
+    <Image Include="Resources/white_pawn.png" />
+    <Image Include="Resources/white_queen.png" />
+    <Image Include="Resources/white_rook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Sources/Board.h" />
+    <ClInclude Include="Sources/ElementBase.h" />
+    <ClInclude Include="Sources/Game.h" />
+    <ClInclude Include="Sources/Piece.h" />
+    <ClInclude Include="Sources/SdlDeleter.h" />
+    <ClInclude Include="Sources/TextureLoader.h" />
+    <ClInclude Include="Sources/Vector2d.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
