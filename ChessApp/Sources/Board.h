@@ -7,7 +7,7 @@
 #include "SdlDeleter.h"
 
 constexpr int BOARD_SIZE = 640;
-constexpr int BOARD_TILE_SIZE = 80;
+constexpr int BOARD_TILE_SIZE = BOARD_SIZE / 8;
 
 class Board final : public ElementBase
 {

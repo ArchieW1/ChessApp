@@ -33,7 +33,6 @@ void Game::MainLoop()
 
       case SDL_MOUSEBUTTONDOWN:
         _board->OnClick(event);
-        
         break;
 
       case SDL_MOUSEMOTION:
