@@ -15,80 +15,80 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ChessApp.cpp">
+    <ClCompile Include="Sources/Board.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Game.cpp">
+    <ClCompile Include="Sources/ChessApp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Board.cpp">
+    <ClCompile Include="Sources/Game.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Piece.cpp">
+    <ClCompile Include="Sources/Piece.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="white_rook.png">
+    <Image Include="Resources/black_bishop.png">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="white_queen.png">
+    <Image Include="Resources/black_king.png">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="white_pawn.png">
+    <Image Include="Resources/black_knight.png">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="white_knight.png">
+    <Image Include="Resources/black_pawn.png">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="white_king.png">
+    <Image Include="Resources/black_queen.png">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="white_bishop.png">
+    <Image Include="Resources/black_rook.png">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="board.png">
+    <Image Include="Resources/board.png">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="black_rook.png">
+    <Image Include="Resources/white_bishop.png">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="black_queen.png">
+    <Image Include="Resources/white_king.png">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="black_pawn.png">
+    <Image Include="Resources/white_knight.png">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="black_knight.png">
+    <Image Include="Resources/white_pawn.png">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="black_king.png">
+    <Image Include="Resources/white_queen.png">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="black_bishop.png">
+    <Image Include="Resources/white_rook.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Game.h">
+    <ClInclude Include="Sources/Board.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Board.h">
+    <ClInclude Include="Sources/ElementBase.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ElementBase.h">
+    <ClInclude Include="Sources/Game.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Piece.h">
+    <ClInclude Include="Sources/Piece.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Vector2d.h">
+    <ClInclude Include="Sources/SdlDeleter.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="TextureLoader.h">
+    <ClInclude Include="Sources/TextureLoader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="SdlDeleter.h">
+    <ClInclude Include="Sources/Vector2d.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
