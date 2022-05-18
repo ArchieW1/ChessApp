@@ -16,3 +16,7 @@ A chess app thing
 - [ ] Database with wins + login
 
 - [ ] AI
+
+***
+# Prototype:
+![Imgur](https://i.imgur.com/mK8OsH0.png)
