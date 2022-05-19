@@ -2,9 +2,9 @@
 
 #include "TextureLoader.h"
 
-Board::Board(const std::shared_ptr<SDL_Renderer>& renderer) : ElementBase(renderer,
-  LoadTexture(renderer, "Resources/board.png"), Vector2D(178, 178),
-  Vector2D(0, 0),Vector2D(BOARD_SIZE, BOARD_SIZE))
+Board::Board(const std::shared_ptr<SDL_Renderer>& renderer) :
+  ElementBase(renderer, LoadTexture(renderer, "Resources/board.png"), Vector2D(178, 178),
+              Vector2D(0, 0),Vector2D(BOARD_SIZE, BOARD_SIZE))
 {
   _pieces.emplace_back(renderer, "Resources/white_rook.png", Vector2D(0, 0));
   _pieces.emplace_back(renderer, "Resources/white_knight.png", Vector2D(BOARD_TILE_SIZE, 0));

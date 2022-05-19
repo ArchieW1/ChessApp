@@ -157,10 +157,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Sources/ElementBase.cpp" />
+    <ClCompile Include="Sources/SdlDeleter.cpp" />
     <ClCompile Include="Sources/Board.cpp" />
-    <ClCompile Include="Sources/ChessApp.cpp" />
+    <ClCompile Include="Sources/Main.cpp" />
     <ClCompile Include="Sources/Game.cpp" />
     <ClCompile Include="Sources/Piece.cpp" />
+    <ClCompile Include="Sources/TextureLoader.cpp" />
+    <ClCompile Include="Sources/Vector2d.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Resources/black_bishop.png" />
