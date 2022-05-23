@@ -2,21 +2,28 @@
 
 #include <string>
 
-#include "ElementBase.h"
+#include "RenderableBase.h"
 
-class Piece : public ElementBase
+
+
+class Piece : public RenderableBase
 {
 public:
-  Piece();
-  Piece(const std::shared_ptr<SDL_Renderer>& renderer, const std::string& pngPath, Vector2D destinationXY);
-  Piece(Vector2D destinationXY);
+  enum PieceColour { WHITE, BLACK, NONE };
 
-  Vector2D GetDestinationRect();
-  void SetDestinationRect(Vector2D destinationRectXY);
+  Piece();
+  Piece(const std::shared_ptr<SDL_Renderer>& renderer, const std::string& pngPath, Vector2D destinationXY,
+        PieceColour colour);
+
+  explicit Piece(Vector2D destinationXY);
+
   bool GetIsEmpty() const;
   void SetIsEmpty(bool isEmpty);
+  PieceColour GetColour() const;
+  void SetColour(PieceColour colour);
 
 private:
-  bool _isEmpty = true;
+  bool _isEmpty;
+  PieceColour _colour;
 };
 

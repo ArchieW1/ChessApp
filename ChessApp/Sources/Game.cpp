@@ -17,35 +17,40 @@ Game::~Game()
   SDL_Quit();
 }
 
+void Game::HandleEvents()
+{
+  SDL_Event event;
+  while (SDL_PollEvent(&event))
+  {
+    switch (event.type)
+    {
+    case SDL_QUIT:
+      SDL_Quit();
+      _isRunning = false;
+      break;
+
+    case SDL_MOUSEBUTTONDOWN:
+      _board->OnClick(event);
+      break;
+
+    case SDL_MOUSEMOTION:
+      _board->OnMove(event);
+      break;
+
+    case SDL_MOUSEBUTTONUP:
+      _board->OnRelease(event);
+      break;
+
+    default:
+      break;
+    }
+  }
+}
+
 void Game::MainLoop()
 {
   while (_isRunning)
   {
-    SDL_Event event;
-    while (SDL_PollEvent(&event))
-    {
-      switch (event.type)
-      {
-      case SDL_QUIT:
-        SDL_Quit();
-        _isRunning = false;
-        break;
-
-      case SDL_MOUSEBUTTONDOWN:
-        _board->OnClick(event);
-        break;
-
-      case SDL_MOUSEMOTION:
-        _board->OnMove(event);
-        break;
-
-      case SDL_MOUSEBUTTONUP:
-        _board->OnRelease(event);
-        break;
-
-      default:
-        break;
-      }
-    }
+    HandleEvents();
   }
 }

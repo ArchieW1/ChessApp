@@ -18,25 +18,25 @@
     <ClCompile Include="Sources/Board.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Sources/ChessApp.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Sources/Game.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Sources/Piece.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ElementBase.cpp">
+    <ClCompile Include="Sources\RenderableBase.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SdlDeleter.cpp">
+    <ClCompile Include="Sources/SdlDeleter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="TextureLoader.cpp">
+    <ClCompile Include="Sources/Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Vector2d.cpp">
+    <ClCompile Include="Sources/TextureLoader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources/Vector2d.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -85,7 +85,7 @@
     <ClInclude Include="Sources/Board.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Sources/ElementBase.h">
+    <ClInclude Include="Sources\RenderableBase.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Sources/Game.h">

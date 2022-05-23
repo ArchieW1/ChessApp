@@ -9,7 +9,7 @@ A chess app thing
 	- [x] Abstract into OOP
 
 - [ ] Game
-	- [ ] Turns
+	- [x] Turns
 	- [ ] Move calculations
 	- [ ] Victory calculations
 

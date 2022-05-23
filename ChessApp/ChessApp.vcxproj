@@ -157,7 +157,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Sources/ElementBase.cpp" />
+    <ClCompile Include="Sources\RenderableBase.cpp" />
     <ClCompile Include="Sources/SdlDeleter.cpp" />
     <ClCompile Include="Sources/Board.cpp" />
     <ClCompile Include="Sources/Main.cpp" />
@@ -183,7 +183,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sources/Board.h" />
-    <ClInclude Include="Sources/ElementBase.h" />
+    <ClInclude Include="Sources\RenderableBase.h" />
     <ClInclude Include="Sources/Game.h" />
     <ClInclude Include="Sources/Piece.h" />
     <ClInclude Include="Sources/SdlDeleter.h" />

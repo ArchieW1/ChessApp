@@ -6,16 +6,19 @@
 
 #include "Vector2d.h"
 
-class ElementBase
+class RenderableBase
 {
 public:
-  explicit ElementBase(std::shared_ptr<SDL_Renderer> renderer, std::shared_ptr<SDL_Texture> texture,
+  explicit RenderableBase(std::shared_ptr<SDL_Renderer> renderer, std::shared_ptr<SDL_Texture> texture,
                        Vector2D sourceWidthHeight, Vector2D destinationXY, Vector2D destinationWidthHeight);
 
-  explicit ElementBase(std::shared_ptr<SDL_Renderer> renderer, std::shared_ptr<SDL_Texture> texture,
+  explicit RenderableBase(std::shared_ptr<SDL_Renderer> renderer, std::shared_ptr<SDL_Texture> texture,
                        Vector2D sourceWidthHeight);
 
-  virtual ~ElementBase() = default;
+  virtual ~RenderableBase() = default;
+
+  Vector2D GetDestinationRect();
+  void SetDestinationRect(Vector2D destinationRectXY);
 
   virtual void Render();
 

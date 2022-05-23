@@ -1,6 +1,7 @@
 #pragma once
 
 #include <memory>
+#include <vector>
 
 #include "SDL.h"
 
@@ -11,6 +12,7 @@ class Game
 public:
   Game();
   ~Game();
+
   void MainLoop();
 
 private:
@@ -18,5 +20,7 @@ private:
   std::shared_ptr<SDL_Renderer> _renderer;
   std::shared_ptr<SDL_Window> _window;
   bool _isRunning = true;
+
+  void HandleEvents();
 };
 
